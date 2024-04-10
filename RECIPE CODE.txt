@@ -1,0 +1,114 @@
+HTML CODE -
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Recipe Website</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>My Recipe Book</h1>
+    </header>
+    <main>
+      <section id="recipe-form">
+        <h2>Add a New Recipe</h2>
+        <form>
+          <label for="recipe-name">Recipe Name:</label>
+          <input type="text" id="recipe-name" required>
+          <br>
+          <label for="recipe-ingredients">Ingredients:</label>
+          <textarea id="recipe-ingredients" rows="5" required></textarea>
+          <br>
+          <label for="recipe-instructions">Instructions:</label>
+          <textarea id="recipe-instructions" rows="5" required></textarea>
+          <br>
+          <button type="submit">Add Recipe</button>
+        </form>
+      </section>
+      <section id="recipe-list">
+        <h2>Recipe List</h2>
+        <ul>
+          <li>
+            <h3>Recipe 1</h3>
+            <p>Ingredients: eggs, milk, flour</p>
+            <p>Instructions: Mix all ingredients and cook in a pan.</p>
+          </li>
+          <li>
+            <h3>Recipe 2</h3>
+            <p>Ingredients: chicken, potatoes, carrots</p>
+            <p>Instructions: Boil chicken and vegetables until cooked.</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
+
+
+
+CSS CODE - 
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem;
+  }
+  
+  section {
+    flex-basis: 50%;
+    padding: 1rem;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 0.5rem;
+  }
+  
+  textarea, input {
+    margin-bottom: 1rem;
+  }
+  
+  button {
+    padding: 0.5rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #444;
+  }
+  
+  #recipe-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #recipe-list li {
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+  
+  #recipe-list h3 {
+    margin-top: 0;
+  }
